@@ -1,0 +1,395 @@
+html,body{
+  margin: 0;
+  padding: 0;
+}
+/* Estilo para el contenedor de ancho completo */
+.content-full-width {
+  margin: 0;
+  width: 90vw;
+  padding: 0;
+}
+
+/* Estilo principal para gestión del presupuesto */
+.gestion-presupuesto {
+margin-right: 10vw;
+padding-top: 10.8vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  align-content: center;
+  width: 100%;
+  text-align: center;
+  justify-content: flex-start; /* Ajustado para mover contenido más arriba */
+  align-items: center;
+
+}
+
+/* Botones de gestión */
+.gestion-presupuesto-buttons {
+  margin-left: 5vw;
+  width: 10vw;
+  justify-content: center;
+  padding: 2vw;
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  align-content: center;
+}
+
+/* Estilos para los enlaces */
+a {
+  justify-content: space-around;
+  background-color: #F7BCBF;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray; /* Cambiado a 1px para un borde más fino */
+  border-radius: 0.5rem; /* Cambiado a rem para mejor control del radio */
+  padding: 2rem; /* Ajustado el padding para mejorar el tamaño */
+  width: auto; /* Cambiado a auto para ajustar el ancho según el contenido */
+  color: black;
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  font-size: 1rem; /* Ajusta el tamaño de la fuente */
+  transition: all 0.3s ease; /* Añade transición suave para efectos hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra para efecto de relieve */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra en el texto para mayor profundidad */
+  align-content: center;
+}
+
+/* Hover para los enlaces */
+a:hover {
+  background-color: #ED6784;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta la sombra en hover */
+  transform: translateY(-2px); /* Efecto de elevación en hover */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Aumenta la sombra del texto en hover */
+  z-index: 12;
+}
+
+/* Título principal */
+.h2-home {
+  margin-left: 13.5vw;
+  box-shadow: 10px #ED6784;
+  width: 100%;
+  font-size: 40px;
+  color: black;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); /* Añade sombra al texto para mayor contraste */
+  margin-bottom: 2vw;
+  text-align: center;
+}
+
+/* Hover para el título */
+h2:hover {
+  color: #ED6784; /* Cambia el color del texto */
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5); /* Aumenta la sombra para un efecto más fuerte */
+  transform: scale(1.05); /* Hace que el texto crezca un poco al pasar el ratón */
+  transition: all 0.3s ease; /* Suaviza la transición de los efectos */
+}
+
+/* Logo del búho */
+.buho-logo {
+  display: flex;
+  width: 3vw;
+  height: 2.1vw;
+  margin-top: -1.7vw;
+  margin-left: -2.7vw;
+  z-index: 10;
+}
+.gestion-presupuesto-button{
+ padding: 1.4vw;
+}
+
+@media (max-width: 1900px) {
+  .content-full-width {
+    width: 85vw; /* Ajusta el ancho para pantallas grandes */
+  }
+  .gestion-presupuesto {
+    margin-left:-2vw;
+    padding-top: 12vw; /* Ajusta el padding superior */
+    gap: 1.5vw; /* Ajusta el espacio entre elementos */
+  }
+  .gestion-presupuesto-buttons {
+    width: 12vw; /* Ajusta el ancho de los botones */
+  }
+  a {
+    font-size: 1.1rem; /* Ajusta el tamaño de la fuente */
+    padding: 1.8rem; /* Reduce ligeramente el padding */
+  }
+  .h2-home {
+    font-size: 38px; /* Ajusta el tamaño del título */
+    margin-left: 5vw;
+  }
+  .buho-logo {
+    width: 3.5vw; /* Ajusta el tamaño del logo */
+    height: 2.5vw;
+  }
+}
+@media (max-width: 1600px) {
+  .content-full-width {
+    width: 80vw;
+  }
+  .gestion-presupuesto {
+    margin-right:14vw;
+    padding-top: 13.5vw;
+    gap: 1.2vw;
+  }
+
+  .gestion-presupuesto-buttons {
+    width: 13vw;
+  }
+  a {
+    font-size: 1rem;
+    padding: 1.6rem;
+  }
+  .h2-home {
+    font-size: 36px;
+margin-right: 5.5vw;
+  }
+  .buho-logo {
+    width: 4vw;
+    height: 3vw;
+    margin-top: -2vw;
+
+  }
+}
+@media (max-width: 1366px) {
+  .content-full-width {
+    width: 75vw;
+  }
+  .gestion-presupuesto {
+    margin-left: 3.4vw;
+    padding-top: 18vw;
+    gap: 1vw;
+  }
+  .gestion-presupuesto-buttons {
+    width: 14vw;
+  }
+  a {
+    font-size: 0.9rem;
+    padding: 1.4rem;
+  }
+  .h2-home {
+    font-size: 30px;
+    margin-left:3vw;
+  }
+  .buho-logo {
+    width: 4.5vw;
+    height: 3.5vw;
+  }
+}
+@media (max-width: 1040px) {
+  .gestion-presupuesto {
+    margin-left: -2vw;
+        padding-top: 23vw;
+        gap: 0.8vw;
+      }
+}
+@media (max-width: 890px) {
+  .content-full-width {
+    width: 70vw;
+  }
+  .gestion-presupuesto {
+margin-left: 15vw;
+    padding-top: 23vw;
+    gap: 0.8vw;
+  }
+  .gestion-presupuesto-buttons {
+    margin-right: 13vw;
+    width: 16vw;
+  }
+  a {
+    font-size: 0.85rem;
+    padding: 1.2rem;
+  }
+  .h2-home {
+    font-size: 28px;
+    margin-left: -10vw;
+  }
+  .buho-logo {
+    width: 5vw;
+    height: 4vw;
+  }
+  .gestion-presupuesto-button{
+    width: 10vw;
+  }
+}
+@media (max-width: 790px) {
+  .content-full-width {
+    width: 60vw;
+  }
+  .gestion-presupuesto {
+margin-left: 30vw;
+margin-top: -20vw;
+    gap: 0.6vw;
+  }
+  .gestion-presupuesto-buttons {
+
+   align-items: center;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    font-size: 0.75rem;
+    padding: 0.8rem;
+  }
+  .h2-home {
+    padding: 0 20vw;
+    margin-top: 8vw;
+    font-size: 26px;
+    margin-left: 3vw;
+  }
+  .buho-logo {
+    margin-left: 11vw;
+    width: 6vw;
+    height: 6vw;
+    margin-top: -15vw;
+  }
+  .gestion-presupuesto-button{
+    width: 10vw;
+    height: 5vh;
+  }
+}
+@media (max-width: 670px) {
+  .content-full-width {
+    width: 60vw;
+  }
+  .gestion-presupuesto {
+margin-left: 30vw;
+margin-top: -20vw;
+    gap: 0.6vw;
+  }
+  .gestion-presupuesto-buttons {
+
+   align-items: center;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    font-size: 0.75rem;
+    padding: 0.8rem;
+  }
+  .h2-home {
+    padding: 0 20vw;
+    margin-top: 8vw;
+    font-size: 26px;
+    margin-left: 3vw;
+  }
+  .buho-logo {
+    margin-left: 11vw;
+    width: 6vw;
+    height: 6vw;
+    margin-top: -16vw;
+    z-index:10;
+  }
+  .gestion-presupuesto-button{
+    width: 10vw;
+    height: 5vh;
+  }
+}
+@media (max-width: 600px) {
+
+
+  .buho-logo {
+    z-index:10;
+    margin-left: 11vw;
+    width: 7vw;
+    height: 6vw;
+    margin-top: -18vw;
+  }
+  .gestion-presupuesto-button{
+    width: 10vw;
+    height: 5vh;
+  }
+}
+@media (max-width: 540px) {
+.gestion-presupuesto{
+  margin-top: -6vw;
+
+}
+  .buho-logo {
+
+    margin-left: 11vw;
+    width: 7.5vw;
+    height: 6.5vw;
+    margin-top: -18vw;
+  }
+  .h2-home{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+  margin-left: 19vw;
+  padding:0 1vw;
+  }
+  .gestion-presupuesto-button{
+    width: 14vw;
+    height: 4vh;
+  }
+}
+@media (max-width: 480px) {
+  .content-full-width {
+    width: 60vw;
+  }
+  .gestion-presupuesto {
+margin-left: 40vw;
+    padding-top: 15vw;
+    gap: 0.6vw;
+  }
+  .gestion-presupuesto-buttons {
+    margin-top: 1.5vw;
+   align-items: center;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    font-size: 0.75rem;
+    padding: 0.8rem;
+  }
+  .h2-home {
+    padding: 0 20vw;
+    margin-top: 12vw;
+    font-size: 26px;
+    margin-left: 8vw;
+  }
+  .buho-logo {
+    margin-left: 12vw;
+    width: 9vw;
+    height: 8vw;
+    margin-top: -29.5vw;
+  }
+  .gestion-presupuesto-button{
+    width: 14vw;
+    height: 5vh;
+  }
+}
+@media (max-width: 390px) {
+  .content-full-width {
+    width: 50vw;
+  }
+  .gestion-presupuesto {
+    padding-top: 18vw;
+    gap: 0.4vw;
+  }
+  .gestion-presupuesto-buttons {
+    width: 25vw;
+  }
+  a {
+    font-size: 0.65rem;
+    padding: 0.6rem;
+  }
+  .h2-home {
+    font-size: 22px;
+    margin-left: 8.5vw;
+  }
+  .buho-logo {
+    margin-top: -29vw;;
+    width: 9.4vw;
+    height: 8.5vw;
+  }
+  .gestion-presupuesto-button{
+    width: 16vw;
+    height: 5vh;
+  }
+}
+

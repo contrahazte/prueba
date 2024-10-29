@@ -1,0 +1,81 @@
+/* Sidebar.css */
+/* Asegúrate de que no haya márgenes o padding global */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para el sidebar */
+.sidebar {
+  z-index: 10;
+  font-family: "Garamond", serif;
+  background-color: #333;
+  width: 200px; /* Ajusta según el tamaño deseado */
+  padding: 1rem;
+  position: fixed; /* Fija el sidebar a la izquierda */
+  height: calc(100vh - 4rem); /* Resta la altura del navbar */
+  top: 2rem; /* Alinea el sidebar debajo del navbar */
+  left: 0;
+  overflow-y: auto; /* Permite scroll si el contenido es demasiado largo */
+  transition: width 0.3s ease; /* Transición suave para el cambio de ancho */
+}
+
+.sidebar-list {
+  margin-top: 4vw;
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-item {
+  font-size: large;
+  margin-left: 2vw;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.sidebar-item:hover {
+  text-decoration: underline;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: white;
+}
+
+a.sidebar-link {
+  background-color: #333;
+  border: #333;
+}
+
+/* Para pantallas de 1024px o menos (tablets y dispositivos pequeños) */
+@media (max-width: 1400px) {
+  .sidebar {margin-top: 4vw;
+    width: 200px; /* Reducción del tamaño del sidebar en tablets */
+  }
+  .sidebar-list {
+    margin-top: 1.5rem; /* Ajusta el margen superior para dispositivos móviles */
+  }
+}
+
+/* Para pantallas de 768px o menos (dispositivos móviles) */
+@media (max-width: 1100px) {
+
+
+  .sidebar-list {
+    margin-top: 1.5rem; /* Ajusta el margen superior para dispositivos móviles */
+  }
+}
+@media (max-width:950px) {
+
+  .sidebar-list {
+    margin-top: 2.5rem; /* Ajusta el margen superior para dispositivos móviles */
+  }
+}
+/* Para pantallas de 480px o menos (teléfonos muy pequeños) */
+@media (max-width: 480px) {
+  .sidebar-item {
+    font-size: small; /* Reduce aún más el tamaño de la fuente */
+    margin-left: 0.5rem; /* Ajusta el margen para pantallas pequeñas */
+  }
+}

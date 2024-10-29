@@ -1,0 +1,1261 @@
+
+/* Contenedor principal */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.first-div{
+margin-top: 3.5vw;
+margin-left: 1vw;
+}
+
+.duplicar-form-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: white;
+}
+
+.duplicar-card {
+  background-color:white;
+  font-size: 16px;
+  width: 55%;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-label-cliente {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+}
+.formulario-label-jefe {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.formulario-input-jefe,
+.formulario-input-cliente {
+  display: flex;
+  justify-content: center;
+  margin-left: 1vw;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Ajuste uniforme de la fuente */
+  width: 15vw;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Hover y focus para ambos inputs */
+.formulario-input-jefe:hover,
+.formulario-input-jefe:focus,
+.formulario-input-cliente:hover,
+.formulario-input-cliente:focus {
+  border-color: #d4d4d4; /* Color del borde en hover y focus */
+  box-shadow: 0 0 5px rgba(247, 141, 167, 0.5); /* Sombra suave en hover y focus */
+  outline: none; /* Elimina el borde de foco predeterminado */
+}
+
+.check-cliente{
+font-size: 17px;
+}
+.check-jefe{
+  font-size: 17px;
+
+  }
+
+.formulario-buttons-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.formulario-button {
+  padding: 12px;
+  font-size: 8px;
+  font-weight: bold;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+h4{
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+.formulario-button.cancelar {
+  background-color: #f44336;
+}
+.h2-search-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom:2vw;
+  align-items: center;
+}
+/* Encabezado */
+h2 {
+  display: flex;justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 3vw;
+  width: 100%;
+margin-right: 12vw;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+h2:hover{
+  text-decoration: none;
+}
+.search-input {
+  width: 64vw;
+  height: 2.8vh;
+  border: 1px solid #ccc; /* Borde inicial */
+  border-radius: 4px; /* Bordes redondeados */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.search-input:hover,
+.search-input:focus {
+  border-color: #d4d4d4;; /* Color del borde en hover y al escribir */
+  box-shadow: 0 0 5px rgba(247, 141, 167, 0.5); /* Sombra suave en hover y focus */
+  outline: none; /* Elimina el borde de foco predeterminado del navegador */
+}
+
+/* Tabla principal */
+.registro-presupuestos-table {
+    width: 65vw;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+.registro-presupuestos-table thead {
+    background-color: white;
+    color: black;
+    justify-content: center;
+}
+.buttons-regitro{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  width: 5vw;
+margin-left: -0.7vw;
+}
+.registro-presupuestos-table th,
+.registro-presupuestos-table td {
+    padding: 15px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+.table-registro{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 30%;
+}
+.h2{margin-left: 9vw;}
+.p-elements{
+  box-sizing: border-box;
+ height: 0.9vw;
+}
+
+.registro-presupuestos-table td a {
+    text-decoration: none;
+}
+
+/* Botones */
+.ms-button-section-registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2vw;
+    min-width: 150px;
+    padding: 0.1rem;
+    border-radius: 0.5vw;
+    background-color: #ED6784;
+    border: 1px solid #ED6784;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.ms-button-section-registro:hover {
+    background-color: white;
+    color: white;
+    border-color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+* Contenedor principal del formulario de duplicar presupuesto */
+.duplicar-presupuesto-container {
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  font-family: "Garamond", serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Permitir que los elementos se apilen en pantallas pequeñas */
+  gap: 4vw; /* Espacio ajustado entre los elementos */
+  width: 80%;
+  margin: 0 auto; /* Centrar el formulario */
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.formulario-presupuesto{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1vw;
+  align-items: center;
+
+}
+/* Estilos para las etiquetas */
+.formulario-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 16px; /* Un tamaño más pequeño y simple */
+  color: #333; /* Texto oscuro para mejor contraste */
+}
+
+
+/* Estilos para los campos de entrada */
+.formulario-input {
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Un tamaño más pequeño y sencillo */
+  width: 10vw;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease; /* Animación suave al interactuar */
+}
+
+.formulario-input:focus {
+  border-color: #f78da7; /* Color del borde al hacer foco, a tono con tu esquema de colores */
+  outline: none;
+}
+.all-form-creating{
+  display: flex;
+  flex-direction: column;
+}
+/* Estilos para los botones */
+.formulario-button {
+  display: flex;
+width: 10vw;
+height: 1.4vw;
+  font-size: 12px;
+ justify-content: center;
+ align-items: center;
+  font-weight: bold;
+  color: white;
+  background-color: #f78da7; /* Color a tono con el resto del estilo */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.formulario-buttons-div{
+  gap:0.4vw;
+  width: 12vw;
+  height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-bottom: 0.5vw;
+margin: 1vw 19.5vw;
+}
+.formulario-button:hover {
+  background-color: #f45c8a; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilo especial para el botón de cancelar */
+.formulario-button.cancelar {
+  background-color:#333  /* Rojo para cancelar */
+}
+
+.formulario-button.cancelar:hover {
+  background-color:black;  /* Rojo más oscuro en hover */
+}
+
+/* Estilos para la tabla principal */
+.tabla-presupuestos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.tabla-presupuestos td {
+  padding: 10px;
+  border: 1px solid #ddd;
+
+}
+
+.tabla-presupuestos tr {
+  background-color: #f9f9f9;
+}
+
+.tabla-presupuestos tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Estilo específico para la fila vacía cuando no hay presupuestos */
+.tabla-presupuestos td[colspan="7"] {
+  text-align: center;
+  font-size: 16px;
+  color: #888;
+  padding: 20px;
+  background-color: #fafafa;
+}
+.button{
+  margin-left: 1vw;
+  border: transparent;
+  padding: 0.3vw;
+  background-color:#f78da7;
+  border-radius: 10%;
+}
+
+.formulario-button,
+.formulario-button-cancelar {
+  font-size: 13px;
+  width: 12vw;
+}
+
+@media (min-width: 1900px) {
+  .duplicar-form-container {
+    gap: 40px; /* Aumenta el espacio entre los elementos */
+  }
+
+  .duplicar-card {
+    font-size: 18px;
+    width: 60%;
+  }
+
+  h2 {
+    font-size: 36px; /* Texto más grande */
+  }
+
+  .search-input {
+    width: 70vw; /* Aumenta el tamaño del input */
+  }
+
+  .registro-presupuestos-table th,
+  .registro-presupuestos-table td {
+    padding: 20px 20px; /* Más espacio en las celdas */
+  }
+  .duplicar-card {
+    width: 60%;
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  .formulario-label-name {
+    font-size: 18px;
+  }
+
+  .formulario-input-cliente,
+  .formulario-input-jefe {
+    width: 20vw;
+    font-size: 16px;
+  }
+
+  .formulario-button,
+  .formulario-button-cancelar {
+    font-size: 16px;
+    width: 12vw;
+  }
+
+  .button {
+    margin-left: 1vw;
+    width: 5vw;
+    font-size: 14px;
+  }
+}
+@media (max-width: 1900px) and (min-width: 1400px) {
+  .first-div{
+    margin-left: -15vw;
+  }
+  .h2{
+    margin-top: 2vw;
+
+  }
+  .duplicar-card {
+    font-size: 16px;
+    width: 55%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .search-input {
+    width: 64vw;
+  }
+
+  .registro-presupuestos-table th,
+  .registro-presupuestos-table td {
+    padding: 15px;
+  }
+  .duplicar-card {
+    width: 55%;
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  .formulario-label-name {
+    font-size: 16px;
+  }
+
+  .formulario-input-cliente,
+  .formulario-input-jefe {
+    width: 18vw;
+    font-size: 14px;
+  }
+
+  .formulario-button,
+  .formulario-button-cancelar {
+height: 2vw;
+    font-size: 14px;
+    width: 100%;
+  }
+  .formulario-buttons-div{
+  margin-top: 3vw;
+  margin-left:18vw;
+  flex-direction: row;
+  }
+  .button {
+    margin-left: 1vw;
+    width: 6vw;
+    font-size: 10px;
+  }
+}
+@media (max-width: 1350px) and (min-width: 1250px) {
+  .first-div{
+    margin-left: -15vw;
+  }
+  .h2{
+    margin-top: 5vw;
+
+  }
+  .duplicar-card {
+    width: 50%;
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .formulario-label-name {
+    font-size: 16px;
+  }
+
+  .formulario-input-cliente,
+  .formulario-input-jefe {
+    width: 16vw;
+    font-size: 14px;
+  }
+
+  .formulario-button,
+  .formulario-button-cancelar {
+
+    font-size: 10px;
+    width: 100%;
+  }
+  .formulario-buttons-div{
+  margin-top: 3vw;
+  margin-left:22vw;
+  flex-direction: row;
+  }
+  .button {
+    margin-left: 1vw;
+    width: 6vw;
+    font-size: 12px;
+  }
+}
+@media (max-width: 1250px) and (min-width: 992px) {
+  .first-div{
+    margin-left: -10vw;
+  }
+  .h2{
+
+    margin-top: 4vw;
+
+  }
+  .duplicar-form-container {
+    gap: 20px;
+  }
+
+  .duplicar-card {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .search-input {
+    width: 75vw;
+  }
+
+  .registro-presupuestos-table th,
+  .registro-presupuestos-table td {
+    padding: 12px;
+  }
+  .formulario-input-jefe,
+.formulario-input-cliente {
+  display: flex;
+  justify-content: center;
+  margin-left: 1vw;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Ajuste uniforme de la fuente */
+  width: 15vw;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+.duplicar-card {
+  width: 50%;
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.formulario-label-name {
+  font-size: 16px;
+}
+
+.formulario-input-cliente,
+.formulario-input-jefe {
+  width: 24vw;
+  font-size: 14px;
+}
+
+.formulario-button,
+.formulario-button-cancelar {
+
+  font-size: 10px;
+  width: 100%;
+}
+.formulario-buttons-div{
+margin-top: 3vw;
+margin-left:22vw;
+flex-direction: row;
+}
+
+.button {
+  margin-left: 1vw;
+  width: 6vw;
+  font-size: 10px;
+}
+
+}
+@media (max-width: 995px) and (min-width: 850px) {
+  .first-div {
+    margin-left: -10vw;
+    margin-top: 3vw;
+  }
+
+  .h2 {
+    margin-top: 3vw;
+    font-size: 22px;
+  }
+
+  .duplicar-form-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .duplicar-card {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .search-input {
+    width: 85vw;
+    height: 2vh;
+  }
+
+  .registro-presupuestos-table {
+    width: 90vw;
+  }
+
+
+
+  .formulario-buttons-div {
+    width: 100%;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .formulario-button {
+    width: 50%;
+    font-size: 14px;
+  }
+
+    .registro-presupuestos-table th,
+    .registro-presupuestos-table td {
+      font-size: 13px;
+      padding: 4px; /* Reducido para pantallas medianas */
+    }
+
+    .duplicar-card {
+      width: 100%;
+      font-size: 14px;
+    }
+
+    h4 {
+      font-size: 15px;
+    }
+
+    .formulario-label-name {
+      font-size: 10px;
+    }
+  .formulario-label-cliente,
+  .formulario-label-jefe{
+    font-size: 10px;
+  }
+    .formulario-input-cliente,
+    .formulario-input-jefe {
+      width: 100%;
+      height: 1.8vh;
+      font-size: 12px;
+    }
+  .formulario-buttons-div{
+    width: 19vw;
+  }
+    .formulario-button,
+    .formulario-button-cancelar {
+      font-size: 9px;
+      width: 100%;
+    }
+
+    .button {
+      margin-left: 1vw;
+      width: 9vw;
+      font-size: 14px;
+    }
+    .check-cliente{
+      font-size: 13px;
+    }
+    .check-jefe{
+      font-size: 13px;
+    }
+}
+
+@media (max-width: 850px) and (min-width: 780px) {
+  .first-div {
+    margin-left: -10vw;
+    margin-top: 3vw;
+  }
+
+  .h2 {
+    margin-top: 3vw;
+    font-size: 22px;
+  }
+
+  .duplicar-form-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .duplicar-card {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .search-input {
+    width: 85vw;
+    height: 2vh;
+  }
+
+  .registro-presupuestos-table {
+    width: 90vw;
+  }
+
+
+
+  .formulario-buttons-div {
+    width: 100%;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .formulario-button {
+    width: 50%;
+    font-size: 14px;
+  }
+
+    .registro-presupuestos-table th,
+    .registro-presupuestos-table td {
+      font-size: 14px;
+      padding: 4px; /* Reducido para pantallas medianas */
+    }
+
+    .duplicar-card {
+      width: 100%;
+      font-size: 14px;
+    }
+
+    h4 {
+      font-size: 15px;
+    }
+
+    .formulario-label-name {
+      font-size: 10px;
+    }
+  .formulario-label-cliente,
+  .formulario-label-jefe{
+    font-size: 10px;
+  }
+    .formulario-input-cliente,
+    .formulario-input-jefe {
+      width: 100%;
+      height: 1.8vh;
+      font-size: 12px;
+    }
+  .formulario-buttons-div{
+    width: 19vw;
+  }
+    .formulario-button,
+    .formulario-button-cancelar {
+      font-size: 9px;
+      width: 100%;
+    }
+
+    .button {
+      margin-left: 1vw;
+      width: 9vw;
+      font-size: 14px;
+    }
+    .check-cliente{
+      font-size: 13px;
+    }
+    .check-jefe{
+      font-size: 13px;
+    }
+}
+
+@media (max-width: 780px) and (min-width: 700px) {
+  .registro-presupuestos-table th,
+  .registro-presupuestos-table td {
+    font-size: 10px;
+    padding: 2px; /* Reducido para pantallas medianas */
+  }
+  .first-div {
+    margin-left: 15vw;
+    margin-top: 10vw;
+  }
+
+  .h2 {
+    margin-left: 5vw;
+    margin-top: 2vw;
+    font-size: 20px;
+  }
+  .duplicar-card {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  .formulario-label-name {
+    font-size: 10px;
+  }
+.formulario-label-cliente,
+.formulario-label-jefe{
+  font-size: 10px;
+}
+  .formulario-input-cliente,
+  .formulario-input-jefe {
+    width: 100%;
+    height: 1.8vh;
+    font-size: 12px;
+  }
+.formulario-buttons-div{
+  width: 19vw;
+}
+  .formulario-button,
+  .formulario-button-cancelar {
+    font-size: 9px;
+    width: 100%;
+  }
+
+  .button {
+    margin-left: 1vw;
+    width: 9vw;
+    font-size: 14px;
+  }
+  .check-cliente{
+    font-size: 13px;
+  }
+  .check-jefe{
+    font-size: 13px;
+  }
+}
+@media (max-width: 700px) and (min-width: 580px) {
+  .first-div {
+    margin-top: 8vw;
+    margin-left:18vw;
+  }
+
+  .h2 {
+    font-size: 18px;
+  }
+
+  .duplicar-form-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .duplicar-card {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .search-input {
+    width: 90vw;
+    height: 2vh;
+  }
+
+  .registro-presupuestos-table {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .button {
+    width: 8.5vw;
+    font-size: 12px;
+  }
+
+  .formulario-buttons-div {
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .formulario-input {
+    width: 95%;
+    font-size: 12px;
+  }
+
+  .formulario-button {
+    width: 95%;
+    font-size: 12px;
+  }
+  .registro-presupuestos-table th,
+  .registro-presupuestos-table td {
+    font-size: 10px;
+    padding: 2px; /* Reducido para pantallas medianas */
+  }
+  .duplicar-card {
+    width: 100%;
+    font-size: 14px;
+  }
+
+
+  h4 {
+    font-size: 15px;
+  }
+
+  .formulario-label-name {
+    font-size: 10px;
+  }
+.formulario-label-cliente,
+.formulario-label-jefe{
+  font-size: 13px;
+}
+  .formulario-input-cliente,
+  .formulario-input-jefe {
+    width: 40%;
+    height: 1.8vh;
+    font-size: 13px;
+  }
+.formulario-buttons-div{
+  margin-left: 31vw;
+  width: 19vw;
+}
+  .formulario-button,
+  .formulario-button-cancelar {
+    font-size: 9px;
+    width: 100%;
+  }
+
+  .button {
+    margin-left: 1vw;
+    width: 9vw;
+    font-size: 14px;
+  }
+  .check-cliente{
+    font-size: 13px;
+  }
+  .check-jefe{
+    font-size: 13px;
+  }
+}
+@media (max-width: 580px) and (min-width: 350px) {
+  .first-div {
+    margin-left: 12vw;
+    margin-top: 10vw;
+  }
+
+  .h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .duplicar-form-container {
+    flex-direction: column;
+    align-items: center;
+  }
+td.duplicar-presupuesto-container{
+box-sizing: border-box;
+padding: 3vw;
+}
+  .duplicar-card {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .search-input {
+    width: 100%;
+    height: 2vh;
+    font-size: 12px;
+  }
+
+  .registro-presupuestos-table {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .button {
+    width: 12vw;
+    font-size: 12px;
+  }
+
+  .formulario-buttons-div {
+margin-top: 1vw;
+    padding: 2vw;
+    width: 100%;
+    gap: 5px;
+    flex-direction:row;
+  }
+
+  .formulario-button {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .formulario-input {
+    width: 100%;
+    font-size: 12px;
+  }
+  .registro-presupuestos-table th,
+  .registro-presupuestos-table td {
+    font-size: 7px;
+    padding: 3px; /* Reducido para pantallas medianas */
+  }
+  .duplicar-card {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  .formulario-label-name {
+    font-size: 10px;
+  }
+.formulario-label-cliente,
+.formulario-label-jefe{
+  font-size: 11px;
+}
+  .formulario-input-cliente,
+  .formulario-input-jefe {
+    width: 40%;
+    height: 0.5vh;
+    font-size: 13px;
+  }
+.formulario-buttons-div{
+  height: 0.5vh;
+  margin-left: 31vw;
+  width: 15vw;
+}
+  .formulario-button,
+  .formulario-button-cancelar {
+    font-size: 7px;
+    width: 20vw;
+    padding:2vw 6vw ;
+  }
+
+  .button {
+    margin-left: 1vw;
+    width:10vw;
+    font-size: 10px;
+  }
+  .check-cliente{
+    font-size: 11px;
+  }
+  .check-jefe{
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 500px) {
+  .first-div {
+    margin-left: 12vw;
+    margin-top: 10vw;
+  }
+
+  .h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .duplicar-form-container {
+    flex-direction: column;
+    align-items: center;
+  }
+td.duplicar-presupuesto-container{
+box-sizing: border-box;
+padding: 3vw;
+}
+  .duplicar-card {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .search-input {
+    width: 100%;
+    height: 2vh;
+    font-size: 12px;
+  }
+
+  .registro-presupuestos-table {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .button {
+    width: 12vw;
+    font-size: 12px;
+  }
+
+  .formulario-buttons-div {
+margin-top: 1vw;
+    padding: 2vw;
+    width: 100%;
+    gap: 5px;
+    flex-direction:row;
+  }
+
+  .formulario-button {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .formulario-input {
+    width: 100%;
+    font-size: 12px;
+  }
+  .registro-presupuestos-table th,
+  .registro-presupuestos-table td {
+    font-size: 7px;
+    padding: 3px; /* Reducido para pantallas medianas */
+  }
+  .duplicar-card {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  .formulario-label-name {
+    font-size: 10px;
+  }
+.formulario-label-cliente,
+.formulario-label-jefe{
+  font-size: 11px;
+}
+  .formulario-input-cliente,
+  .formulario-input-jefe {
+    width: 40%;
+    height: 0.5vh;
+    font-size: 13px;
+  }
+.formulario-buttons-div{
+  height: 0.5vh;
+  margin-left: 31vw;
+  width: 15vw;
+}
+  .formulario-button,
+  .formulario-button-cancelar {
+    font-size: 7px;
+    width: 20vw;
+    padding:3vw 6vw ;
+  }
+
+  .button {
+    margin-left: 1vw;
+    width:10vw;
+    font-size: 10px;
+  }
+  .check-cliente{
+    font-size: 10px;
+  }
+  .check-jefe{
+    font-size: 10px;
+  }
+}
+/* Pantallas grandes >= 1900px */
+@media (min-width: 1900px) {
+  .duplicar-presupuesto-container {
+    width: 80%;
+    gap: 4vw;
+    padding: 25px;
+  }
+
+  .duplicar-card {
+    width: 60%;
+    font-size: 18px;
+  }
+}
+
+/* Pantallas medianas entre 1900px y 1400px */
+@media (max-width: 1900px) and (min-width: 1400px) {
+  .duplicar-presupuesto-container {
+    width: 75%;
+    gap: 3vw;
+    padding: 20px;
+  }
+
+  .duplicar-card {
+    width: 55%;
+    font-size: 16px;
+  }
+}
+
+/* Pantallas medianas entre 1400px y 1250px */
+@media (max-width: 1400px) and (min-width: 1250px) {
+  .duplicar-presupuesto-container {
+    width: 80%;
+    gap: 3vw;
+    padding: 20px;
+  }
+
+  .duplicar-card {
+    width: 50%;
+    font-size: 16px;
+  }
+}
+
+/* Pantallas medianas entre 1250px y 992px */
+@media (max-width: 1250px) and (min-width: 992px) {
+  .duplicar-presupuesto-container {
+    width: 74%;
+    gap: 3vw;
+    padding: 20px;
+  }
+
+  .duplicar-card {
+    width: 50%;
+    font-size: 16px;
+  }
+}
+
+/* Pantallas medianas entre 992px y 850px */
+@media (max-width: 992px) and (min-width: 850px) {
+  .duplicar-presupuesto-container {
+    width: 85%;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 20px;
+  }
+
+  .duplicar-card {
+    width: 90%;
+    font-size: 15px;
+  }
+}
+
+/* Pantallas pequeñas entre 850px y 576px */
+@media (max-width: 850px) and (min-width: 576px) {
+  .duplicar-presupuesto-container {
+    width: 90%;
+    flex-direction: column;
+    gap: 1.5vw;
+    padding: 20px;
+  }
+
+  .duplicar-card {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+/* Pantallas pequeñas entre 576px y 500px */
+@media (max-width: 576px) and (min-width: 500px) {
+  .duplicar-presupuesto-container {
+    width: 95%;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 15px;
+  }
+
+  .duplicar-card {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+/* Pantallas muy pequeñas <= 500px */
+@media (max-width: 500px) {
+  .duplicar-presupuesto-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 15px;
+  }
+
+  .duplicar-card {
+    width: 100%;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,95 @@
+body,html{
+  margin: 0%;
+  padding: 0%;
+  width: 100vw;
+}
+
+.mms-navbar {
+  background-color: #ED6784; /* Color de fondo rosa */
+  display: flex;
+  align-items: center;
+  padding: 2px; /* Espacio alrededor del contenido */
+  height: 80px; /* Altura del navbar */
+}
+
+.mms-navbar-left-section {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Permite que esta sección se expanda */
+
+
+}
+
+.mms-navbar-buttons-container {
+  box-sizing: border-box;
+  margin: 0;
+  padding-left: 1vw;
+margin-left:13.4vw;
+  display: flex;
+  gap: 10px; /* Espacio entre los botones */
+}
+.disabled-link {
+  pointer-events: none;
+  color: grey;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.mms-navbar-button {
+  background-color: transparent; /* Sin color de fondo */
+  color: #333;
+  padding: 10px 20px;
+  border: none; /* Sin borde */
+  cursor: pointer;
+  display: flex;
+  flex-direction: column; /* Coloca el icono encima del texto */
+  align-items: center;
+  z-index: 10; /* Asegura que el botón esté en una capa superior */
+  position: relative; /* Necesario para que `z-index` funcione correctamente */
+  pointer-events: auto; /* Asegura que el botón pueda recibir eventos de puntero */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Añadir transición */
+}
+
+.mms-navbar-button:hover {
+  background-color:#ebd2d3;; /* Efecto hover */
+}
+
+.icon {
+  font-size: 24px; /* Tamaño de los iconos */
+  margin-bottom: 5px; /* Espacio entre el icono y el texto */
+  color: white; /* Color blanco para los iconos */
+}
+
+.p-buttons {
+  color: white;
+}
+
+.datos-presupuesto {
+  box-sizing: border-box;
+  padding-right: 0.4vw;
+  margin-left: 0vw;
+  margin-right: 15.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Reduce la separación vertical entre el ID y la fecha */
+}
+
+.id-presupuesto {
+  color: white;
+  font-size: x-large;
+  margin: 0; /* Elimina el margen superior e inferior */
+  line-height: 1; /* Ajusta la altura de la línea para reducir el espacio */
+}
+
+.fecha-presupuesto {
+  color: white;
+  font-size: 20px;
+  margin: 0; /* Elimina el margen superior e inferior */
+  line-height: 1; /* Ajusta la altura de la línea */
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0.7vw;
+}
+.fecha{margin-left: 0.4vw;
+}

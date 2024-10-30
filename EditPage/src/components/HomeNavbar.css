@@ -1,0 +1,20 @@
+/* Estilos para el navbar */
+.navbar {
+    background-color: #000; /* Color negro */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar a {
+    color: white; /* Color del texto blanco */
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  .navbar a:hover {
+    background-color: #555; /* Cambia el fondo al pasar el ratón */
+    border-radius: 5px;
+  }

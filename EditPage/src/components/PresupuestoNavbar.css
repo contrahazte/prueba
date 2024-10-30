@@ -1,0 +1,489 @@
+.sms-navbar {
+  font-family: "Garamond", serif;
+  position: fixed; /* Fija la barra en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%; /* Se extiende a lo largo de toda la página */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 4vw; /* Establece la altura del navbar a 4vw */
+  padding: 0 20px; /* Ajusta el padding horizontal para dar espacio */
+  background-color: #000; /* Fondo negro */
+  color: #F7BCBF; /* Color rosa para las letras */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra sutil para el navbar */
+  z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+}
+.disabled-link {
+  pointer-events: none;
+  color: grey;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+a.sms-logo-presupuestoNavbar {
+  margin-top: 0.3vw;
+  height: 6vh;
+  padding: 0.2vw 1vw;
+  background-color: black;
+  border: solid transparent;
+}
+
+.sms-items-div-navbar {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-end;
+}
+
+.sms-buttons-navbar {
+  align-content: center;
+  margin: 1vw 0.5vw;
+  height: 1.4rem;
+  width: 4rem;
+  background-color: #000;
+}
+
+.sms-navbar-logo img {
+  min-height: 100%; /* Ajusta la altura del logo para que se adapte al navbar */
+  width: 100%;
+  max-height: 2.5vw; /* Ajusta para asegurarse de que el logo no sobrepase la altura */
+  margin-top: 0.3vw;
+
+}
+
+/* Eliminar hover del logo */
+.sms-navbar-logo a {
+  margin-bottom: 0.3vw;
+  width: 8vw;
+  display: inline-block;
+  text-decoration: none; /* Asegura que no haya efectos de subrayado o hover */
+  cursor: default; /* Elimina el puntero del mouse que indica un enlace */
+  margin-right:4.6vw;
+}
+
+.sms-navbar-links {
+  width: 25vw;
+  display: flex;
+
+  margin-left: 0vw; /* Empuja los enlaces hacia el extremo derecho */
+  padding-right: 30px; /* Añade un pequeño margen a la derecha */
+  justify-content: flex-end;
+}
+
+.sms-navbar-links a {
+  flex-wrap: wrap;
+  padding: 0.2vw 1rem; /* Reduce el padding para disminuir la altura de los botones */
+  text-decoration: none;
+  color: #F7BCBF; /* Color rosa para los enlaces */
+  font-size: 1.2vw; /* Ajusta el tamaño de la fuente para adaptarlo a la altura */
+  transition: color 0.3s ease;
+  line-height: 1.2vw; /* Reduce la alineación vertical para mantener los botones compactos */
+  border: 1px solid transparent; /* Bordes ligeros para dar estructura */
+  border-radius: 5px; /* Bordes redondeados para los botones */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra en el texto para mayor profundidad */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra ligera para el botón */
+  white-space: nowrap;
+
+}
+
+/* Hover solo para los enlaces, sin afectar al logo */
+.sms-navbar-links a:hover {
+  text-decoration: underline #f78da7; /* Solo muestra un overline */
+  background-color: transparent; /* Elimina cualquier fondo de hover */
+  color: #F7BCBF; /* Mantiene el color rosa */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Aumenta la sombra del texto en hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Aumenta la sombra del botón en hover */
+}
+.welcome{
+  color: #ED6784;
+  margin-right: -4.34vw;
+  margin-left: 46vw;
+  padding: 0vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width:12vw;
+  font-size: 20px;
+  box-sizing: border-box;
+  z-index: 1;
+  margin-top: 1.4vw;
+
+}
+.welcome:hover{
+  color:#F7BCBF; /* Cambia el color del texto */
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5); /* Aumenta la sombra para un efecto más fuerte */
+  transform: scale(1.05); /* Hace que el texto crezca un poco al pasar el ratón */
+  transition: all 0.3s ease; /* Suaviza la transición de los efectos */
+}
+/* Media Queries para adaptabilidad */
+@media (max-width: 1900px) {
+  .sms-navbar {
+    height: 3.5vw; /* Ajusta la altura del navbar */
+    padding: 2px 18px; /* Ajusta el padding horizontal */
+  }
+/* Eliminar hover del logo */
+.sms-navbar-logo a {
+ height: 2vw;
+  display: inline-block;
+  text-decoration: none; /* Asegura que no haya efectos de subrayado o hover */
+  cursor: default; /* Elimina el puntero del mouse que indica un enlace */
+  margin-right:10vw;
+}
+  .sms-navbar-logo img {
+    max-height: 2.3vw; /* Ajusta el tamaño del logo */
+  }
+
+  .sms-navbar-links a {
+    font-size: 1.1vw; /* Ajusta el tamaño de la fuente */
+    padding: 0 1rem; /* Mantiene el padding entre enlaces */
+    line-height: 1.5vw; /* Ajusta la alineación vertical */
+  }
+
+  .welcome {
+    width: 12vw;
+    margin-top: 1.18vw;
+    margin-left: 40vw; /* Ajusta la posición del texto de bienvenida */
+    font-size: 19px; /* Ajusta el tamaño de fuente */
+  }
+}
+@media (max-width: 1700px) {
+  .sms-navbar {
+    height: 3.8vw; /* Ajusta la altura del navbar */
+    padding: 0 15px;
+  }
+/* Eliminar hover del logo */
+.sms-navbar-logo a {
+  width: 8vw;
+  display: inline-block;
+  text-decoration: none; /* Asegura que no haya efectos de subrayado o hover */
+  cursor: default; /* Elimina el puntero del mouse que indica un enlace */
+  margin-right:14vw;
+}
+  .sms-navbar-logo img {
+    max-height: 2.5vw; /* Ajusta el tamaño del logo */
+  }
+
+  .sms-navbar-links a {
+    font-size: 1.2vw; /* Ajusta el tamaño de la fuente */
+    padding: 0 1rem;
+    line-height: 1.6vw;
+  }
+
+  .welcome {
+    margin-top: 1.17vw;
+    margin-left: 35vw;
+    font-size: 19px;
+  }
+}
+@media (max-width: 1600px) {
+  .sms-navbar {
+    height: 3.8vw; /* Ajusta la altura del navbar */
+    padding: 4px 15px;
+  }
+  .sms-navbar-logo a {
+    width: 7.5vw;
+    display: inline-block;
+    text-decoration: none; /* Asegura que no haya efectos de subrayado o hover */
+    cursor: default; /* Elimina el puntero del mouse que indica un enlace */
+    margin-right:8vw;
+    margin-top: 0.1vw;
+  }
+  .sms-navbar-logo img {
+    max-height: 2.5vw; /* Ajusta el tamaño del logo */
+  }
+
+  .sms-navbar-links a {
+    font-size: 1.2vw; /* Ajusta el tamaño de la fuente */
+    padding: 0 1rem;
+    line-height: 1.6vw;
+  }
+
+  .welcome {
+
+   margin-right: 0.005vw;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1366px) {
+  .sms-navbar {
+    height: 4vw; /* Ajusta la altura del navbar */
+    padding: 4px 12px;
+  }
+  .sms-navbar-logo a {
+    width: 8.9vw;
+    height: 4vh;
+    display: inline-block;
+    text-decoration: none; /* Asegura que no haya efectos de subrayado o hover */
+    cursor: default; /* Elimina el puntero del mouse que indica un enlace */
+    margin-right:3.6vw;
+    margin-top: 0.4vw;
+  }
+  .sms-navbar-logo img {
+    max-height: 2.8vw; /* Ajusta el tamaño del logo */
+  }
+
+  .sms-navbar-links a {
+    font-size: 1.5vw;
+    padding: 0.5rem 0.8rem;
+    line-height: 2vw;
+  }
+
+  .welcome {
+    margin-top: 1.9vw;
+margin-right: 3vw;
+    font-size: 17px;
+    width: 15vw;
+  }
+}
+@media (max-width: 1366px) {
+  .sms-navbar {
+    height: 4vw; /* Ajusta la altura del navbar */
+    padding: 13px 12px;
+  }
+  .sms-navbar-links a {
+    margin-right: 1vw;
+    font-size: 1.8vw;
+    padding: 0.5rem 0.8rem;
+    line-height: 2vw;
+  }
+  .sms-navbar-logo a {
+    width: 10.7vw;
+    height: 4.5vh;
+    display: inline-block;
+    text-decoration: none; /* Asegura que no haya efectos de subrayado o hover */
+    cursor: default; /* Elimina el puntero del mouse que indica un enlace */
+    margin-right:2vw;
+    margin-top: 0.4vw;
+  }
+  .welcome {
+    box-sizing: content-box;
+     margin-top :1.6vw;
+ margin-left: 31.5vw;
+     font-size: 22px;
+     margin-bottom: -0.3vw;
+
+   }
+}
+@media (max-width: 1250px) {
+  .sms-navbar {
+    height: 4vw; /* Ajusta la altura del navbar */
+    padding: 15px 12px;
+  }
+  .sms-navbar-links a {
+    font-size: 1.vw;
+    padding: 1rem 0.8rem;
+    line-height: 2vw;
+  }
+  .sms-navbar-logo a {
+    width: 10.7vw;
+    height: 4.2vh;
+    display: inline-block;
+    text-decoration: none; /* Asegura que no haya efectos de subrayado o hover */
+    cursor: default; /* Elimina el puntero del mouse que indica un enlace */
+    margin-right:2vw;
+    margin-top: 1.3vw;
+  }
+  .welcome {
+
+    margin-right: 7vw;
+    box-sizing: content-box;
+     margin-top :2.5vw;
+ margin-left: 26vw;
+     font-size: 19px;
+     margin-bottom: -0.3vw;
+
+   }
+}
+@media (max-width: 1150px) {
+  .sms-navbar {
+    height: 4vw; /* Ajusta la altura del navbar */
+    padding: 15px 12px;
+  }
+  .sms-navbar-links a {
+    font-size: 2vw;
+    padding: 1rem 0.8rem;
+    margin-right: 1.6vw;
+    line-height: 2vw;
+  }
+  .welcome {
+
+    margin-right: 7vw;
+    box-sizing: content-box;
+     margin-top :2.5vw;
+ margin-left: 27vw;
+     font-size: 20px;
+     margin-bottom: -0.3vw;
+
+   }
+}
+
+
+@media (max-width: 1100px) {
+
+  .welcome {
+
+    margin-right: 7vw;
+    box-sizing: content-box;
+     margin-top :2.7vw;
+ margin-left: 24vw;
+     font-size: 17px;
+     margin-bottom: -0.3vw;
+
+   }
+   .sms-navbar-logo a {
+    width: 8.9vw;
+    height: 3.5vh;
+    display: inline-block;
+    text-decoration: none; /* Asegura que no haya efectos de subrayado o hover */
+    cursor: default; /* Elimina el puntero del mouse que indica un enlace */
+    margin-right:3vw;
+    margin-top: 1.8vw;
+  }
+}
+@media (max-width: 950px) {
+  .sms-navbar {
+    height: 4vw; /* Ajusta la altura del navbar */
+    padding: 15px 12px;
+  }
+  .welcome {
+
+    margin-right: 7vw;
+    box-sizing: content-box;
+     margin-top :3vw;
+ margin-left: 25vw;
+     font-size: 16px;
+     margin-bottom: -0.3vw;
+
+   }
+   .sms-navbar-logo a {
+    width: 9vw;
+    height: 2.7vh;
+    display: inline-block;
+    text-decoration: none; /* Asegura que no haya efectos de subrayado o hover */
+    cursor: default; /* Elimina el puntero del mouse que indica un enlace */
+    margin-right:3vw;
+    margin-top: 2vw;
+  }
+}
+@media (max-width: 890px) {
+  .sms-navbar {
+    height: 4vw; /* Ajusta la altura del navbar */
+    padding: 16px 12px;
+  }
+  .sms-navbar-links a {
+    font-size: 2.3vw;
+    padding: 1rem 0.8rem;
+    margin-right: 1.6vw;
+    line-height: 2vw;
+  }
+  .welcome {
+
+    margin-right: 7.4vw;
+    box-sizing: content-box;
+     margin-top :3.3vw;
+ margin-left: 22vw;
+     font-size: 15px;
+     margin-bottom: -0.3vw;
+
+   }
+
+}
+@media (max-width: 835px) {
+  .sms-navbar {
+    height: 4vw; /* Ajusta la altura del navbar */
+    padding: 24px 12px;
+  }
+  .sms-navbar-links a {
+    margin-top: 1.5vw;
+    font-size: 2.5vw;
+    padding: 1rem 0.8rem;
+    margin-right: 1.6vw;
+    line-height: 2vw;
+  }
+  .sms-navbar-logo a {
+    width: 8.9vw;
+    height: 4vh;
+    display: inline-block;
+    text-decoration: none; /* Asegura que no haya efectos de subrayado o hover */
+    cursor: default; /* Elimina el puntero del mouse que indica un enlace */
+    margin-right:3vw;
+    margin-top: 2vw;
+  }
+  .welcome {
+
+    margin-right: 9.5vw;
+    box-sizing: content-box;
+     margin-top :4.2vw;
+ margin-left: 19vw;
+     font-size: 14px;
+     margin-bottom: -0.3vw;
+
+   }
+}
+@media (max-width: 768px) {
+  .sms-navbar {
+    height: 8vw; /* Ajusta la altura del navbar */
+    padding: 0.1vw 10px;
+  }
+  .sms-navbar-logo a {
+    margin-right: -19vw;
+        width: 10vw;
+        height: 2.3vh;
+        display: inline-block;
+        text-decoration: none; /* Asegura que no haya efectos de subrayado o hover */
+        cursor: default; /* Elimina el puntero del mouse que indica un enlace */
+    margin-left: 3.5vw;
+        margin-top: 1.4vw;
+      }
+      .sms-navbar-logo img {
+        max-height: 5vw; /* Ajusta el tamaño del logo */
+      }
+  .sms-navbar-logo img {
+    max-height: 5vw; /* Ajusta el tamaño del logo */
+  }
+
+  .sms-navbar-links a {
+
+    font-size: 18px;
+    padding: 0.2rem 0.5rem;
+    line-height: 4vw;
+  }
+
+  .welcome {
+margin-right:11vw;
+    margin-left: 34vw;
+    font-size: 12px;
+    margin-top: 3vw;
+  }
+}
+@media (max-width: 500px) {
+  .sms-navbar {
+    height: 8vw; /* Ajusta la altura del navbar */
+    padding: 0.6vw 10px;
+  }
+  .sms-navbar-links a {
+
+    font-size: 11px;
+    padding: 0.2rem 0.2rem;
+    line-height: 4vw;
+  }
+  .sms-navbar-logo a {
+    margin-right: -19vw;
+        width: 10vw;
+        height: 3.9vh;
+        display: inline-block;
+        text-decoration: none; /* Asegura que no haya efectos de subrayado o hover */
+        cursor: default; /* Elimina el puntero del mouse que indica un enlace */
+    margin-left: 3.5vw;
+        margin-top: 1.6vw;
+      }
+  .welcome {
+    margin-right:20vw;
+        margin-left: 20vw;
+        font-size: 7px;
+        margin-top: 4.2vw;
+      }
+}
+

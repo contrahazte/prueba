@@ -1,0 +1,776 @@
+/* Contenedor principal de la página */
+.presupuestos-page {
+    width: 50vw;
+    box-sizing: border-box;
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra el contenido horizontalmente */
+    justify-content: flex-start;
+    min-height: 100vh;
+    /* Asegura que ocupe el alto total de la pantalla */
+    margin: 0 25vw;
+
+    /* Margen de 20% a ambos lados */
+    box-sizing: border-box;
+    /* Incluye padding y border en el ancho total */
+    font-family: "Garamond", serif;
+    font-size: large;
+
+}
+
+.black-section {
+    border-radius: 0.001vw;
+    width: 47.7vw;
+    background-color: black;
+    align-items: center;
+}
+
+.logo-phone {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 8vh;
+    margin: 1vw 0;
+}
+
+.total-row {
+    margin-left: 2vw;
+}
+
+.cliente-info {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    justify-content: left;
+}
+
+.phone-icon {
+    margin-right: 0.5vw;
+}
+
+.cliente-info p {
+    margin: 0.4vw;
+    min-width: 8vw;
+}
+
+.text-cliente {
+    font-size: 16px;
+font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    text-shadow: #4e4e4e;
+}
+
+.nombre-icon-cliente {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.cliente-icon {
+    margin-top: -0.22vw;
+    width: 50px;
+    /* Ajusta el tamaño del icono */
+    height: auto;
+    /* Mantiene las proporciones del icono */
+}
+
+.jefe-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 60%;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+.cliente-jefeProyecto {
+    font-size: smaller;
+    box-sizing: border-box;
+    width: 63.8vw;
+    min-height: 15vh;
+    display: flex;
+    flex-direction: row;
+    gap: 0.4vw;
+    justify-content: center;
+    font-weight: 300;
+
+}
+
+.url-nombre-jefeProyectos {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: flex-start;
+    align-content: center;
+    margin-right: 0;
+}
+
+.img-jefe-proyecto {
+    width: 4vw;
+    height: 4vw;
+    /* Ajusta para ser un cuadrado */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2vw 1vw;
+    /* Mantén margen para espaciar el contenedor */
+}
+
+/* Asegura que la imagen se centre y no se recorte */
+.img-jefe-proyecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Mantiene la proporción de la imagen */
+    border-radius: 50%;
+}
+
+.sms-jefe-proyecto {
+    flex-grow: 1;
+    max-width: 70%;
+    background-color: #444;
+    border-radius: 20px;
+    padding: 10px 15px;
+    position: relative;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+    margin-top: 1.9vw;
+}
+
+.sms-jefe-proyecto::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #444 transparent transparent;
+}
+
+.jefe-proyecto {
+    font-size: x-large;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: flex-start;
+    padding-right: 3vw;
+    gap: 0.3vw;
+    text-shadow: #4e4e4e;
+}
+
+#nombre-jefe {
+    display: inline;
+    color: red;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.textos-jefes {
+    margin-left: 0.2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1vw
+}
+
+p.texto-jefe {
+    margin: 0;
+    min-width: 2vw;
+    font-size: medium;
+    padding-left: 0.1vw;
+}
+
+.p-sms-jefe {
+    word-spacing: 0.3;
+    font-size: 16px;
+    width: auto;
+    word-wrap: break-word;
+    color: #fff;
+}
+
+.phone {
+    width: 45%;
+    padding: 0 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.text {
+    color: white;
+    display: flex;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* Contenedor de logo */
+.ms-div-logo {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 40%);
+    margin-bottom: 30px;
+}
+
+.ms-logo {
+    box-sizing: border-box;
+    margin-top: 2vw;
+    width: 20vw;
+    height: auto;
+    padding: 1vw;
+    padding-bottom: 1.5vw;
+}
+
+/* Asegúrate de que el texto no se agrande al hacer clic */
+.ql-editor {
+    font-size: 14px;
+    /* Establece un tamaño de fuente */
+    color: black;
+    /* Color de texto negro */
+}
+
+/* Evitar cambios en el tamaño de la fuente al hacer clic */
+.ql-container {
+    font-size: 14px;
+    /* Mantiene el tamaño de la fuente al hacer clic */
+}
+
+/* Sección de presupuesto-info */
+.presupuesto-info {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 20%);
+    margin-top: 2vw;
+    padding: 1vw;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+.titulo{
+    font-size: 25px;
+}
+.p-nombre {
+    justify-content: flex-start;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#texto-cargo-jefe {
+    font-weight: bold;
+}
+
+.presupuesto-info h2,
+.presupuesto-info h3 {
+    margin: 1vw 0;
+    font-size: 1vw;
+}
+
+p {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.presupuesto-info p {
+    margin: 0.5vw 0;
+    font-size: 1vw;
+    line-height: 1.5;
+}
+
+.presupuesto-contenedor {
+    font-size: larger;
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: row;
+    width: 47.7vw;
+    /* Ocupa todo el ancho disponible */
+    box-sizing: border-box;
+    justify-content: space-between;
+    /* Asegura que haya espacio entre los elementos */
+}
+
+.presupuesto-content {
+
+    width: 68.2%;
+    /* Ajusta el ancho a un porcentaje para que sea más flexible */
+    display: flex;
+    flex-direction: column;
+    margin-right: 2vw;
+    /* Ajusta el margen derecho para mejorar el espaciado */
+}
+
+.presupuesto-contenido {
+    font-weight: 545;
+    display: flex;
+    flex-direction: column;
+    padding:  0.5vw ;
+    /* Reducir el padding general */
+    align-items: flex-start;
+}
+.no-content-message {
+    display: none; /* Ocultar por defecto */
+  }
+
+  /* Mostrar el mensaje solo si no hay contenido */
+  .presupuesto-content:has(.no-content-message) {
+    display: block; /* Muestra el mensaje si no hay secciones */
+  }
+
+.imgs-aside {
+    width: 1.5vw !important;
+    /* Reduce el tamaño de las imágenes al 70% del tamaño original */
+    height: auto;
+    /* Mantiene la proporción original de la imagen */
+    max-width: none;
+    /* Desactiva cualquier max-width que pudiera estar afectando */
+}
+
+.presupuesto-contenido h3,
+.presupuesto-contenido h4,
+.presupuesto-contenido p {
+    margin: 0.3vw 0;
+    /* Reducir el margen vertical entre los textos */
+    line-height: 1.5;
+    /* Ajustar la altura de línea para que los textos estén más juntos */
+}
+
+.formas-de-pago {
+    font-weight: 500;
+    font-size: 17px;
+    justify-content: flex-start;
+    /* Ajusta el ancho a un porcentaje coherente */
+    background-color: #f9f9f9;
+    border-left: 2.5px solid grey;
+    /* Franja gris a la izquierda */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 1vw 0.4vw;
+    /* Agrega un padding interno */
+    margin-left: 0;
+    /* Elimina el margen innecesario */
+    overflow-wrap: break-word;
+    /* Evita que las palabras largas se salgan del contenedor */
+    word-wrap: break-word;
+    /* Apoyo para navegadores antiguos */
+    overflow: hidden;
+    /* Evita desbordamiento */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Opcional: agrega un pequeño sombreado para estética */
+}
+#formas-de-pago-aceptadas{
+    font-size: 16px;
+}
+
+.div-formas-de-pago-aceptadas {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-formas-de-pago-aceptadas p:first-child {
+    font-size: 17px;
+    font-weight: bold;
+    white-space: nowrap;
+    /* Evita que el texto se divida en varias líneas */
+    overflow: hidden;
+    /* Asegura que no haya desbordamiento visible */
+    text-overflow: ellipsis;
+    /* Añade "..." si el texto es demasiado largo */
+}
+
+.buho-div,
+.informacion-div,
+.tarjeta-div {
+    display: flex;
+    flex-direction: row;
+    /* Alinea imagen y texto en fila */
+    align-items: center;
+    /* Centra verticalmente */
+    margin-bottom: 20px;
+    /* Espaciado entre secciones */
+}
+
+.buho-div img,
+.informacion-div img,
+.tarjeta-div img {
+    width: 40px;
+    /* Tamaño de las imágenes */
+    height: auto;
+    /* Mantiene la proporción de las imágenes */
+    margin-right: 10px;
+    /* Espacio entre imagen y texto */
+}
+
+.buho-div p,
+.informacion-div p,
+.tarjeta-div p {
+    margin: 0;
+    /* Elimina el margen por defecto */
+    font-size: 0.9em;
+    /* Ajusta el tamaño del texto */
+}
+
+.link-seomalaga {
+    color: black;
+    text-decoration: underline;
+}
+
+.h3-presupuesto {
+    font-size: 1.5em;
+    /* Tamaño del texto */
+    font-weight: bold;
+    /* Peso de la fuente */
+    position: relative;
+    /* Necesario para que ::after funcione correctamente */
+    margin-bottom: 20px;
+    /* Espaciado inferior */
+    padding-bottom: 15px;
+    /* Espacio entre el texto y las líneas */
+}
+
+.h3-presupuesto::after {
+    content: '';
+    /* Pseudo-elemento vacío */
+    display: block;
+    width: 100%;
+    /* Ancho de las líneas */
+    height: 1px;
+    /* Grosor de la primera línea */
+    background-color: #333;
+    /* Color de la línea */
+    margin: 5px auto 0;
+    /* Centrado y espaciado entre texto y líneas */
+    box-shadow: 0 4px 3px -2px rgba(0, 0, 0, 0.3);
+    /* Sombra */
+    position: relative;
+}
+
+
+.span-cleinte-jefe{
+    margin-left: 0.2vw;
+}
+.empresa-cliente {
+    color: #444;
+    font-size: 18px;
+    font-weight: 550;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    transform: translateX(-0.4vw) translateY(-0.5em); /* Desplaza 2vw a la izquierda y 0.5em hacia arriba */
+}
+
+.empresa-cliente p {
+    transform: translateX(0.2em); /* Mueve solo el texto 0.2em hacia la derecha */
+}
+
+.empresa-cliente::after {
+    content: '';
+    display: block;
+    width: 40%;
+    height: 1.2px;
+    background-color: #444;
+    margin: 5px auto 0;
+    box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
+    position: relative;
+    left: 3%; /* Desplaza la línea un 10% hacia la derecha */
+}
+
+
+
+
+.buho-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.img-info {
+    width: 0.5vw;
+}
+
+.checkmark {
+    margin-left: 10px;
+    /* Estilo opcional del checkmark */
+}
+
+.imgs-acepto-la-propuesta img {
+    width: 190px;
+    /* Tamaño de las imágenes */
+    margin: 10px;
+    /* Espacio entre las imágenes */
+    margin-left: 25px;
+
+
+}
+
+.table tr {
+    display: flex;
+    align-items: center;
+}
+
+.table td {
+    margin-left: 5.1vw;
+}
+
+.table th {
+    margin-left: 3.9vw;
+}
+
+.presupuesto-contenido {
+    width: 100%;
+    /* Asegura que el contenedor ocupe todo el ancho disponible */
+    box-sizing: border-box;
+    /* Incluye el padding y border en el cálculo de ancho */
+    padding: 0;
+    /* Evita padding adicional que podría distorsionar el contenido */
+    margin: 0;
+    /* Evita márgenes innecesarios que puedan romper el flujo */
+    overflow-wrap: break-word;
+    /* Evita que las palabras largas se desborden */
+    word-wrap: break-word;
+    /* Soporte para navegadores más antiguos */
+    white-space: normal;
+    /* Permite que el texto fluya correctamente */
+}
+
+.presupuesto-contenido h2,
+.presupuesto-contenido h3,
+.presupuesto-contenido h4,
+.presupuesto-contenido p {
+    margin: 0.5em 0;
+    /* Establece un margen razonable entre los elementos */
+    line-height: 1.5em;
+    /* Asegura que el texto tenga suficiente espacio */
+}
+
+.presupuesto-contenido table {
+    width: 100%;
+    /* Asegura que las tablas ocupen todo el ancho disponible */
+    border-collapse: collapse;
+    /* Elimina los espacios entre las celdas de la tabla */
+    margin: 1em 0;
+    /* Añade un margen alrededor de las tablas */
+    table-layout: auto;
+    /* Permite que las celdas ajusten su tamaño automáticamente */
+}
+
+.presupuesto-contenido th,
+.presupuesto-contenido td {
+    padding: 8px;
+    /* Añade un padding interno a las celdas */
+    border: 0.2px solid transparent;
+    /* Añade bordes sutiles a las celdas */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+}
+
+.presupuesto-contenido th {
+    background-color: #f4f4f4;
+    /* Fondo diferente para los encabezados de la tabla */
+    font-weight: bold;
+    /* Hace los encabezados más destacados */
+}
+
+.presupuesto-contenido td {
+    vertical-align: top;
+    /* Alinea el contenido de las celdas en la parte superior */
+}
+
+.presupuesto-contenido ul,
+.presupuesto-contenido ol {
+    padding-left: 20px;
+    /* Añade espacio a la izquierda de listas */
+    margin: 0.5em 0;
+    /* Espacio entre listas */
+}
+
+.presupuesto-contenido img {
+    max-width: 100%;
+    /* Asegura que las imágenes no se desborden del contenedor */
+    height: auto;
+    /* Mantiene la proporción original de las imágenes */
+    display: block;
+    /* Asegura que las imágenes se comporten como elementos de bloque */
+    margin: 1em 0;
+    /* Añade un margen alrededor de las imágenes */
+}
+
+.presupuesto-contenido iframe,
+.presupuesto-contenido video {
+    max-width: 100%;
+    /* Asegura que los videos y iframes no se desborden */
+    height: auto;
+    /* Mantiene la proporción de los videos */
+    display: block;
+    /* Comportamiento como un bloque */
+    margin: 1em 0;
+    /* Añade un margen alrededor */
+}
+
+.presupuesto-form {
+    text-align: center;
+    font-weight: bolder;
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrar elementos horizontalmente */
+    justify-content: center;
+    /* Centrar elementos verticalmente */
+    width: 18vw;
+    height: 11vw;
+    position: fixed;
+    /* Fijar el formulario a una posición fija */
+    right: 40vw;
+    /* Espacio desde el borde derecho */
+    top: 410px;
+    /* Espacio desde el borde superior */
+    background-color: #fff;
+    /* Fondo blanco */
+    padding: 20px;
+    /* Espaciado interno */
+    border: 1px solid #ddd;
+    /* Borde */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra para relieve */
+    z-index: 1000;
+    /* Asegurarse de que esté delante de otros elementos */
+    max-width: 100%;
+    /* Asegura que el formulario nunca se salga de la pantalla */
+}
+
+.floating-button-container {
+    position: fixed;
+    /* Fijar el botón de envío */
+    right: 20px;
+    /* Espacio desde el borde derecho */
+    bottom: 20px;
+    /* Espacio desde el borde inferior */
+    z-index: 999;
+    /* Asegura que esté sobre otros elementos */
+}
+
+.submit-button {
+    width: 6vw;
+    background-color: #ED6784;
+    color: black;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: black;
+    color: #ED6784;
+}
+.form-buttons{
+    display: flex;
+    flex-direction: row;
+    gap:0.5vw
+}
+/* Estilo para el botón flotante */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    /* Distancia desde la parte inferior de la ventana */
+    right: 20px;
+    /* Distancia desde la parte derecha de la ventana */
+    background-color: #ED6784;
+    /* Color de fondo */
+    color: black;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    /* border-radius: 50px;  Bordes redondeados */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el ratón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para dar efecto de profundidad */
+    transition: background-color 0.3s;
+    /* Transición suave para el color de fondo */
+}
+
+.floating-button:hover {
+    background-color: white;
+    /* Color de fondo al pasar el ratón */
+    color: #ED6784;
+}
+
+.input-field,
+.textarea-field {
+    width: 250px;
+    /* Ancho específico */
+    padding: 10px;
+    /* Espaciado interno */
+    margin-top: 5px;
+    /* Espaciado superior */
+    border: 1px solid #ccc;
+    /* Borde gris claro */
+    border-radius: 4px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    font-size: 14px;
+    /* Tamaño de fuente */
+}
+
+.textarea-field {
+    margin-left: 0;
+    /* Centramos el textarea eliminando el margen a la izquierda */
+    width: 250px;
+    height: 20px;
+    /* Aumentamos la altura del textarea */
+    resize: none;
+    /* Deshabilitar el redimensionamiento */
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centramos los labels e inputs */
+}
+
+.label-description {
+    margin-left: 0;
+}
+
+.label-name {
+    text-align: center;
+}
+

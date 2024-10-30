@@ -1,0 +1,113 @@
+/* Estilo base para el sidebar */
+.sidebar {
+  top: 0;
+  font-family: "Garamond", serif;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  transition: left 0.5s ease;
+}
+
+/* Estilos para el botón "burger" */
+
+/* Cuando el botón hamburguesa es estático (se desplaza con el contenido) */
+.burger-static {
+  position: fixed; /* El botón sigue el flujo de la página */
+  top: 25px;
+  left: 60px;
+  z-index: 1000; /* Asegura que el botón esté delante del contenido */
+}
+
+/* Cuando el botón hamburguesa es fijo (no se desplaza con el contenido) */
+.burger-fixed {
+  position: fixed; /* El botón se mantiene fijo en la pantalla */
+  top: 25px;
+  left: 60px;
+  z-index: 1000; /* Asegura que el botón esté delante del contenido */
+}
+
+/* Burger bar compartido */
+.burger-bar {
+  margin-right: 2vw;
+  width: 30px;
+  height: 4px;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Color negro para presupuestos y nuevoPresupuesto */
+.burger-black .burger-bar {
+  background-color: black;
+}
+
+/* Color rosado (#ED6784) para el resto */
+.burger-pink .burger-bar {
+  background-color: #ED6784;
+}
+
+/* Sidebar en formato burger, se despliega cuando se añade la clase "open" */
+.sidebar-burger {
+  position: absolute;
+  top: 50px; /* Se abre justo debajo del botón burger */
+  left: -250px; /* Oculto fuera de la pantalla */
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  transition: left 0.5s ease; /* Transición suave */
+  z-index: 999;
+}
+
+/* Cuando el sidebar está abierto, lo mostramos */
+.sidebar-burger.open {
+  left: 0; /* Desliza el Sidebar desde la izquierda */
+}
+.layout{
+  width: 100vw;
+  height: 100vh;
+}
+/* Contenido principal */
+.content {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.content-full-width {
+
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+}
+@media (max-width: 800px) {
+
+  /* Color rosado (#ED6784) para el resto */
+  .burger-pink .burger-bar {
+    margin-top: -0.4vw;
+  margin-left: -6vw;
+  }
+  }
+@media (max-width: 610px) {
+
+/* Color rosado (#ED6784) para el resto */
+.burger-pink .burger-bar {
+  margin-top: -0.9vw;
+margin-left: -6vw;
+}
+}
+@media (max-width: 610px) {
+
+/* Color rosado (#ED6784) para el resto */
+.burger-pink .burger-bar {
+  margin-top: -0.9vw;
+margin-left: -9vw;
+}
+}
